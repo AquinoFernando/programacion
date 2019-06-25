@@ -1,0 +1,28 @@
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+using namespace System;
+int main()
+{
+	int neumaticos, total, precio;
+	cout << "numero de neumaticos a comprar ";
+	cin >> neumaticos;
+	if (neumaticos < 3)
+	{
+		precio = 145 * neumaticos;
+
+	}
+	else if ((3 <= neumaticos) && (neumaticos <= 5))
+	{
+		precio = 138 * neumaticos;
+	}
+	else
+	{
+		precio = 135 * neumaticos;
+	}
+
+	cout << "total a pagar: " << precio;
+
+	_getch();
+}
